@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/robertkrimen/otto/ast"
-	"github.com/robertkrimen/otto/file"
-	"github.com/robertkrimen/otto/token"
+	"github.com/alecthomas/otto/ast"
+	"github.com/alecthomas/otto/file"
+	"github.com/alecthomas/otto/token"
 )
 
 var trueLiteral = &_nodeLiteral{value: toValue_bool(true)}
