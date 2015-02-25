@@ -982,6 +982,8 @@ func stringToReflectValue(value string, kind reflect.Kind) (reflect.Value, error
 		return reflect.ValueOf(float64(value)), nil
 	case reflect.String:
 		return reflect.ValueOf(value), nil
+	case reflect.Interface:
+		return reflect.ValueOf(value), nil
 	}
 
 	// FIXME This should end up as a TypeError?
